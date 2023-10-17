@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'rajdhani';
+  src: url(../assets/police/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'cantarell';
+  src: url(../assets/police/Cantarell-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'adventure';
+  src: url(../assets/police/Adventure.otf);
+}
+
+:root {
+  --black-color: #FFFFFF;
+  --white-color: #000000;
+  --gray-color: #7C7675;
+  --red-color: #B11313;
+  --bleu-color: #07338C;
+  --gray-bleu: #19587D;
+  --bleu-gray: #193C7D;
+  --light-red: #B4202E;
+  --black-gray: #212E3E ;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body{
+  font-family: "rajdhani" !important;
+  color: white !important;
+  background-color: var(--black-gray) !important;
+}

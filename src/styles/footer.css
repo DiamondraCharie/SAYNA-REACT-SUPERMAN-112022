@@ -1,0 +1,18 @@
+footer{
+  background-color: var(--black-gray); 
+  padding: 20px; 
+  text-align: center;
+}
+
+.social-item{
+  padding:10px;
+}
+
+.textfooter{
+  font-size: 13px;
+}
+
+
+
+
+  

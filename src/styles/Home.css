@@ -1,0 +1,275 @@
+body {
+    background-image: url(../assets/images/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+}
+
+/*div {
+    border: 1px solid white;
+}*/
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 80px;
+    z-index: 99;
+}
+
+.social-media  img {
+    padding-top: 50px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: inline;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.intro img {
+    height: 250px;
+    width: 250px;
+}
+
+.intro .titre {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.intro .titre h1 {
+   font-family: adventure;
+   font-size: 105px;
+}
+
+.intro .titre h2 {
+   font-family: adventure;
+   font-size: 36px;
+   letter-spacing: 2px;
+}
+
+.espace-vertical {
+    height: 200px;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+p {
+    font-family: cantarell;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.s-personnage img {
+    width: 300px;
+    height: 430px;
+    margin: 50px 0;
+}
+
+.les-heros {
+    background-image: url(../assets/images/img11.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    filter: grayscale(100%);
+}
+
+/*La partie multimédia*/
+.multimedia button {
+    position: relative;
+    top: 170px;
+    background: none;
+    border: none;
+  }
+
+  .multimedia button.right {
+    right: -1000px;
+  }
+
+  .multimedia .slider-multimedia {
+    display: flex;
+    width: 600px;
+    margin: 40px auto;
+  }
+
+  .multimedia .slider-image {
+    width: 500px;
+  }
+
+  .multimedia .slider-content {
+    padding: 12px;
+    background: linear-gradient(-60deg, var(--black-gray), var(--gray-bleu));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .multimedia .slider-content h2 {
+    font-family: cantarell;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  .multimedia .slider-content h3 {
+    font-family: cantarell;
+    font-size:16px ;
+  }
+
+  .multimedia .slider-content p {
+    font-size: 13px;
+    font-family: cantarell;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .multimedia  .image-bande-annonce img {
+    width:800px ;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+ 
+ /*Design de la partie contact et formulaire*/
+ .formulaire {
+     background-image: url(../assets/images/img16.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-top: 100px;
+     padding: 70px 0;
+  }
+
+  .formulaire .form {
+    width: 600px;
+    margin: 0 auto;
+    }
+
+  .formulaire h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .formulaire .title {
+    display: block;
+    margin: 20px 0;
+    font-size: 22px;
+  }
+
+  .formulaire .form input[type='email'], .formulaire textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid darkgray;
+    background-color: transparent;
+    width:530px;
+  }
+
+  .formulaire .frequence {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgray;
+    margin: 10px 0;
+    width: 530px;
+  }
+
+.formulaire .text {
+    color: darkgray;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .formulaire .news {
+    margin: 15px 0;
+    border-bottom: 1px solid darkgray;
+    width: 530px;
+    margin-top: 25px;
+  }
+
+  .formulaire .icon img {
+    transform: rotate(-90deg);
+    width: 15px;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form input[type='radio'] {
+    opacity: 0;
+  }
+
+  .btn-group label {
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 12px;
+    font-family: cantarell;
+    padding: 15px;
+  }
+
+  input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    background-color: #07338C;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form input[type='radio'] {
+    opacity: 0;
+  }
+
+  .btn-group label {
+    cursor: pointer;
+    border: 1px solid;
+    font-family: cantarell;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 15px 0;
+  }
+
+  
+  input[type='submit'] {
+    display: block;
+    font-family: adventure;
+    letter-spacing: 2px;
+    color: white;
+    margin: 25px auto;
+    cursor: pointer;
+    background-color: #07338C;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  .citation-carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px; 
+    text-align: center; 
+  }
+
+  .citation-carte span {
+    font-size: 12px;
+    color: darkgrey;
+  }
+
+
+ 
