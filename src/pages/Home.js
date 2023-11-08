@@ -25,13 +25,12 @@ function Home() {
   return (
     
        <>
-         <div className="superman-image ">
-            <div className="container">
-               <div className='social-media'>
+       <section className="superman-image ">
+               <div className='scroll'>
                   <img className='s-med' src={facebook} alt='fb'/>
                   <img className='s-med' src={instagram} alt='insta'/>
                   <img className='s-med' src={twitter} alt='tw'/>
-               </div>
+               </div>  
                <div className='head-content'> 
                   <img src={logoDC} alt=''/>
                   <div className='title'>
@@ -39,8 +38,7 @@ function Home() {
                     <h2>L’HOMME D’ACIER </h2>
                   </div>
                </div>
-            </div>
-         </div>
+        </section>
          <div className='container'>
             <div className='superman-cinema'>
                <div className='s-content'>
@@ -80,19 +78,22 @@ function Home() {
              </div>
            </div>
          </div>
-
-        <div className='container'>   
-          <div className='s-content'>
-              <h2>BATMAN V SUPERMAN</h2>
-              <p>Le monde n’est pas assez grand pour deux super héros. Alors que Superman se battait contre Zod, l’affrontement fait des dégats et détruit partiellement la ville de Métropolis. Bruce Wayne alors présent dans la ville assiste, impuissant, à l’effondrement de la ville qui fait beaucoup de victimes. Wayne est alors persuadé que Superman causera un jour la perte de l'Humanité et qu'il est inévitable de se préparer à l'éliminer. Devenu méfiant il se demande si l'homme de fer, cet extraterrestre de Krypton, qui peut à lui seul détruire le monde d'une simple pichenette, décidera un jour de ne plus défendre la Terre, voire même de causer sa perte. </p>
-              <p>De son côté Superman d’une part cherche à se défendre mais retourne l’offensive contre Batman. Ce dernier n'est plus que l'ombre de lui-même. Devenu un justicier impitoyable, mégalomane et cruel à la suite du meurtre de son ancien partenaire Robin par le Joker, il n'hésite plus à violer son code moral en éliminant et marquant au fer les criminels. Superman souhaite simplement lui rappeler le code moral des “justicier” en usant de la force s’il le faut pour que Batman cesse son comportement abusif.</p>
-          </div>
-       </div> 
   
-        <div className='Multimedia'> 
+        <div className='multimedia'> 
+            <div className='vs'>   
+               <div className='container'>
+                  <div className='s-content'>
+                    <h2>BATMAN V SUPERMAN</h2>
+                    <p>Le monde n’est pas assez grand pour deux super héros. Alors que Superman se battait contre Zod, l’affrontement fait des dégats et détruit partiellement la ville de Métropolis. Bruce Wayne alors présent dans la ville assiste, impuissant, à l’effondrement de la ville qui fait beaucoup de victimes. Wayne est alors persuadé que Superman causera un jour la perte de l'Humanité et qu'il est inévitable de se préparer à l'éliminer. Devenu méfiant il se demande si l'homme de fer, cet extraterrestre de Krypton, qui peut à lui seul détruire le monde d'une simple pichenette, décidera un jour de ne plus défendre la Terre, voire même de causer sa perte. </p>
+                   <p>De son côté Superman d’une part cherche à se défendre mais retourne l’offensive contre Batman. Ce dernier n'est plus que l'ombre de lui-même. Devenu un justicier impitoyable, mégalomane et cruel à la suite du meurtre de son ancien partenaire Robin par le Joker, il n'hésite plus à violer son code moral en éliminant et marquant au fer les criminels. Superman souhaite simplement lui rappeler le code moral des “justicier” en usant de la force s’il le faut pour que Batman cesse son comportement abusif.</p>
+                 </div>
+               </div>
+           </div> 
            <div className='container'> 
                <div className='slide'>
-                   <h2 className="title">MULTIMÉDIA</h2>
+                   <div className='s-content'>
+                     <h2 className="title">MULTIMÉDIA</h2>
+                   </div>
                    <button className="left">
                        <img src={Polygon1} alt="Icon flèche 1"/>
                    </button>
@@ -103,13 +104,13 @@ function Home() {
                        <div className="slider-image">
                           <img src={img12} alt="sup of steel"/>
                        </div>
-                   <div className="slider-content">
-                       <h2>ACTION, Adventure</h2>
-                       <h3>Superman Man of Steel</h3>
-                       <p>IMDB : <span className="yellow">7.1</span></p>
-                       <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent détruire la planète.
-                       </p>
-                   </div>
+                      <div className="slider-content">
+                         <h2>ACTION, Adventure</h2>
+                         <h3>Superman Man of Steel</h3>
+                         <p>IMDB : <span className="yellow">7.1</span></p>
+                         <p>Clark Kent, malgré son apparence humaine normale, est l'un des derniers membres d'une race éteinte. Il se retrouve forcé de révéler son identité lorsque la Terre est envahie par une armée de survivants qui menacent détruire la planète.
+                         </p>
+                       </div>
                  </div>
                  <div className='container'>      
                     <div className="image-bande-annonce">
@@ -118,9 +119,41 @@ function Home() {
                  </div>  
               </div>  
           </div>  
-
-
         </div> 
+
+        <section className="contact">
+          <div className="form">
+              <h2>PRENONS CONTACT</h2>
+              <form action="form" method="get">
+                <label className="titre" for="email">ADRESSE EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="Adresse email"/>
+                <label className="titre" for="newsletter">NEWSLETTER</label>
+                <label className="text" for="case">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
+                  Batman :</label>
+                  <input type="checkbox"/> 
+                  <div className="frequence">
+                    <span className="text">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                    <span className="icon">
+                      <img src={Polygon1} alt="Flèche"/>
+                    </span>
+                  </div>
+                  <div className="text">
+                    <p className="news">Souhaitez-vous recevoir des news</p>
+                  </div>
+                  <div className="btn-group">
+                    <input className="bouton" type="radio" id="film"/>
+                    <label for="film">Des Films</label>
+                    <input className="bouton" type="radio" id="comics"/>
+                    <label for="comics">Des Comics </label>
+                    <input className="bouton" type="radio" id="tout"/>
+                    <label for="tout">De tout</label>
+                  </div>
+                  <p className="titre">MESSAGE</p>
+                  <textarea name="commentaire" id="commentaire" cols="30" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                  <input className="my-bouton" type="submit" value="CONFIRMER"/>
+              </form>
+            </div>
+        </section>
   
   
       </>
