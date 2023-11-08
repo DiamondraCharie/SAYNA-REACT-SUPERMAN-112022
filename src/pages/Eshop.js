@@ -1,10 +1,13 @@
 import React from 'react'
+import HeroShop from '../components/HeroShop'
 
 const Eshop = () => {
   return (
-    <section className='hero'>
-      <h1>welcome to Eshop page</h1>
-    </section>
+    <>
+      <HeroShop/>
+      <h1>Filter</h1>
+      <h1>Product list</h1>
+    </>
   )
 }
 

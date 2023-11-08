@@ -1,0 +1,58 @@
+.signup-image {
+    background-image: url(../assets/images/img19.png);
+    height: 800px;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .formulaire {
+    background-image: linear-gradient(to bottom right, hsl(201, 100%, 6%), hsl(354, 40%, 44%));
+    max-width: 50%;
+    padding: 40px 100px;
+    margin-top: -35%;
+    border-radius: 10px;
+  }
+
+  .form-body {
+    background-color: rgba(122, 122, 122, 0.848);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+
+  .head h2 {
+    font-family: adventpro;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  .head p {
+    font-family: cantarell;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .form-label {
+    font-family: adventpro;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .form-control {
+    font-size: 12px;
+    background-color: transparent;
+  }
+
+  .btn {
+    font-family: adventure;
+    font-size: 18px;
+    background: linear-gradient(to right, #19587D, #B4202E);
+    border-radius: 16px;
+    padding: 25px;
+  }

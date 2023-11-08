@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import logo_0 from '../assets/logos/logo_0.png'
+import { NavLink } from 'react-router-dom'
+import icon_WB from '../assets/logos/icon_WB.png'
 import logo_1 from '../assets/logos/logo_1.png'
 import logo_2 from '../assets/logos/logo_2.png'
 import logo_3 from '../assets/logos/logo_3.png'
@@ -14,24 +14,24 @@ const Footer = () => {
     <footer class="mt-5 py-5">
        <div class="container text-center">
           <div class="text-footer">
-             <img src={logo_0} alt="" />
+             <img src={icon_WB} alt="" />
              <span class="textfooter"> Ce projet respecte l’univers cinématographique des films Superman.</span>
           </div>
           <div class="social-footer mt-3">
-             <Link href="" class="social-item-hoveryellow">
+             <NavLink href="" class="social-item-hoveryellow">
                <img src={logo_1} alt="" />
                <img src={logo_2} alt="" />
                <img src={logo_3} alt="" />
-             </Link>
-             <Link href="" class="social-item">
+             </NavLink>
+             <NavLink href="" class="social-item">
                 <img class="hoveryellow" src={facebook} alt=""/>
-             </Link>
-             <Link href="" class="social-item">
+             </NavLink>
+             <NavLink href="" class="social-item">
               <img class="hoveryellow" src={instagram} alt=""/>
-             </Link>
-             <Link href="" class="social-item">
+             </NavLink>
+             <NavLink href="" class="social-item">
                <img class="hoveryellow" src={twitter} alt=""/>
-             </Link>
+             </NavLink>
           </div>
        </div>
     </footer>

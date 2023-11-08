@@ -1,26 +1,28 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../pages/Home'
-import Game from '../pages/Game'
-import Eshop from '../pages/Eshop'
-import MonCompte from '../pages/MonCompte'
-import Footer from '../components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from '../pages/Home';
+import Game from '../pages/Game';
+import Eshop from '../pages/Eshop';
+import MonCompte from '../pages/MonCompte';
+import Layout from '../pages/Layout';
+import Signup from '../pages/Signup';
+import Login from '../pages/Login';
+
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-       <NavBar/>
        <Routes>
-       <Route>
-           <Route path='/' element={<Home/>} />
-           <Route path='/game' element={<Game/>}/>
-           <Route path='/eshop' element={<Eshop/>}/>
-           <Route path='/moncompte' element={<MonCompte/>}/>
+       <Route path='/' element={<Layout/>} > 
+           <Route path='index' element={<Home/>} />
+           <Route path='home' element={<Home/>} />
+           <Route path='game' element={<Game/>}/>
+           <Route path='eshop' element={<Eshop/>}/>
+           <Route path='compte' element={<MonCompte/>}/>
+           <Route path='signup' element={<Signup/>}/>
+           <Route path='login' element={<Login/>}/>
         </Route>   
         </Routes>
-        <Footer/>
       </BrowserRouter>
     </>
   )

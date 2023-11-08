@@ -13,6 +13,12 @@
   src: url(../assets/police/Adventure.otf);
 }
 
+@font-face {
+  font-family: 'adventpro';
+  src: url(../assets/police/AdventPro-VariableFont_wdth\,wght.ttf);
+}
+
+
 :root {
   --black-color: #FFFFFF;
   --white-color: #000000;
@@ -20,9 +26,10 @@
   --red-color: #B11313;
   --bleu-color: #07338C;
   --gray-bleu: #19587D;
-  --bleu-gray: #193C7D;
+  --bleu-gray: #081a3a;
   --light-red: #B4202E;
   --black-gray: #212E3E ;
+  --gradient-bleu: 
 }
 
 *{
@@ -31,13 +38,16 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+body{
+  font-family: rajdhani !important;
+  color: white !important;
+  background-color: black !important;
 }
 
-body{
-  font-family: "rajdhani" !important;
-  color: white !important;
-  background-color: var(--black-gray) !important;
+button{
+  padding: 10px;
+  color: white;
+  border: none;
+  background: rgb(198,198,198);
+  background: linear-gradient(138deg, rgba(198,198,198,1) 0%, rgba(121,9,17,1) 73%);
 }

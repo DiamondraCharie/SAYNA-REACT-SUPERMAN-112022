@@ -1,0 +1,30 @@
+.login-image {
+    background-image: url(../assets/images/img19.png);
+    height: 800px;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .formulaire {
+    background-image: linear-gradient(to bottom right, #00141f, #9c434c);
+    max-width: 50%;
+    padding: 40px 100px;
+    margin-top: -35%;
+    border-radius: 10px;
+  }
+
+  .form-body {
+    background-color: rgba(122, 122, 122, 0.848);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    font-family: adventure;
+    font-size: 18px;
+    background: linear-gradient(to right, #19587D, #B4202E);
+    border-radius: 16px;
+    padding: 25px;
+  }

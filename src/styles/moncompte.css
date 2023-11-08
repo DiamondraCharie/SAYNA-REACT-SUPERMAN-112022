@@ -1,0 +1,35 @@
+.compte-image {
+    background-image: url(../assets/images/img22.png);
+    height: 800px;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-title {
+    padding-top: 4em;
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: white 0px 10px 30px;
+  }
+  
+  .a {
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .a:active,
+  .a:hover {
+    text-decoration: underline;
+  }
+
+  .my-4 {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .content {
+    font-weight: lighter;
+  }

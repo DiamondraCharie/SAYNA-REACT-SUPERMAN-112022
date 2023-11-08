@@ -1,25 +1,33 @@
-.nav-link{
-    color:white;
-    font-size:22px ;
-  }
-  
-  .active{
-    font-weight:bolder ;
-    text-decoration: underline;
-    color:white !important;
-  }
-  
-  nav{
-   background-color: black !important;
-  }
-  
-  .navbar-toggler{
-    background-color: white !important;
-   }
 
-  .navbar-brand img {
-    width: 90px;
-    height: 65px;
+.nav-link{
+  color:white;
+  font-size:22px ;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.active{
+  font-weight:bolder ;
+  text-decoration: underline;
+  color: #fff !important;
+}
+
+nav{
+ background:none !important;
+}
+
+.navbar-toggler{
+  background-color: white !important;
  }
 
+ .navbar-brand img{
+  height: 60px;
+  width: 70px;
+ }
 
+ .navbar-brand:hover {
+  -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+  filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+}

@@ -1,37 +1,37 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../styles/navbar.css'
-import logo_blanc from '../assets/logos/logo_blanc.png'
+import React from 'react';
+import logo_blanc from '../assets/logos/logo_blanc.png';
+import '../styles/navbar.css';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+function NavBar() {
   return (
-    <nav class="navbar navbar-expand-lg transparent">
-  <div class="container">
-    <Link class="navbar-brand" routerLink="">
-      <img src={logo_blanc} alt=""/>
-    </Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <Link class="nav-link" aria-current="page" routerLink="" routerLinkActive="active">HOME</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" routerLink="game" routerLinkActive="active" >GAME</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" routerLink="eshop" routerLinkActive="active" >ESHOP</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" routerLink="compte" routerLinkActive="active" >MON COMPTE</Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+    <nav className="navbar navbar-expand-lg bg-dark">
+       <div className="container">
+         <NavLink to='/' className="navbar-brand" routerLink="">
+            <img src={logo_blanc} alt=""/>
+         </NavLink>
+         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span className="navbar-toggler-icon"></span>
+         </button>
+         <div className="collapse navbar-collapse" id="navbarNav">
+             <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                   <NavLink to='home' className="nav-link" aria-current="page" routerLink="" routerLinkActive="active">HOME</NavLink>
+                </li>
+                <li className="nav-item">
+                   <NavLink to='game' className="nav-link" routerLink="game" routerLinkActive="active" >GAME</NavLink>
+                </li>
+                <li className="nav-item">
+                   <NavLink to='eshop' className="nav-link" routerLink="eshop" routerLinkActive="active" >ESHOP</NavLink>
+                </li>
+                <li className="nav-item">
+                   <NavLink to='compte' className="nav-link" routerLink="compte" routerLinkActive="active" >MON COMPTE</NavLink>
+                </li>
+             </ul>
+          </div>
+       </div>
+     </nav>
+ 
   )
 }
 
