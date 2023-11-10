@@ -7,6 +7,7 @@ import Layout from '../pages/Layout';
 import Signup from '../pages/Signup';
 import Login from '../pages/Login';
 import Cart from  '../pages/Cart';
+import Confirmation from '../pages/Confirmation';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
            <Route path='signup' element={<Signup/>}/>
            <Route path='login' element={<Login/>}/>
            <Route path='cart' element={<Cart/>}/>
+           <Route path='cart' element={<Confirmation/>}/>
         </Route>   
         </Routes>
       </BrowserRouter>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HeroShop from '../components/HeroShop';
-import flèche_down_header from '../assets/icones/flèche_down_header.png';
 
 const Eshop = () => {
 
@@ -13,12 +12,9 @@ const Eshop = () => {
     <>
       <HeroShop/>
       <section className='container pt-5'>
-        <div className='fleche'>
-          < img src={flèche_down_header} alt=''/>
-        </div>
         <div className='float-end'>
           <Link to='/cart'>
-            <i class="fa-solid fa-2x fa-cart-plus"></i>
+            <i class="fa-solid fa-2x fa-cart-shopping"></i>
           </Link>
         </div>
       </section>

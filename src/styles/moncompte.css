@@ -1,3 +1,13 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 130px;
+  top: 340px;
+  z-index: 2;
+}
+
 .compte-image {
     background-image: url(../assets/images/img37.png);
     height: 800px;
@@ -12,7 +22,7 @@
     font-size: 36px;
     font-weight: bolder;
     letter-spacing: 2px;
-    padding: 230px 96px;
+    padding: 340px 96px;
   }
   
   .a {

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/moncompte.css';
+import facebook from '../assets/icones/facebook.png';
+import instagram from '../assets/icones/instagram.png';
+import twitter from '../assets/icones/twitter.png';
 
 const MonCompte = () => {
   return (
@@ -15,6 +18,11 @@ const MonCompte = () => {
           </h1>
        </div>
      </div>
+     <div className='scroll'>
+        <img className='s-med' src={facebook} alt='fb'/>
+        <img className='s-med' src={instagram} alt='insta'/>
+        <img className='s-med' src={twitter} alt='tw'/>
+     </div> 
    </section>
    <section>
      <div className="container">

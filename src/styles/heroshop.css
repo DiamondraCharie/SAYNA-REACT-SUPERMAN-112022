@@ -1,3 +1,13 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 130px;
+  top: 340px;
+  z-index: 2;
+}
+
 .hero-image{
     background-image: url(../assets/images/img20.png);
     height: 700px;
@@ -12,6 +22,11 @@
     font-size: 48px;
     font-weight: bolder;
     letter-spacing: 2px;
-    padding: 230px 96px;
+    padding: 340px 96px;
   }
   
+  .hero .fleche {
+    position: absolute;
+    left: 50%;
+    padding: 15px;
+  }
