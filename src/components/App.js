@@ -6,7 +6,7 @@ import MonCompte from '../pages/MonCompte';
 import Layout from '../pages/Layout';
 import Signup from '../pages/Signup';
 import Login from '../pages/Login';
-
+import Cart from  '../pages/Cart';
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
            <Route path='compte' element={<MonCompte/>}/>
            <Route path='signup' element={<Signup/>}/>
            <Route path='login' element={<Login/>}/>
+           <Route path='cart' element={<Cart/>}/>
         </Route>   
         </Routes>
       </BrowserRouter>

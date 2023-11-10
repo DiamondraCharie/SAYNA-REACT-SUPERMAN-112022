@@ -1,5 +1,5 @@
 .compte-image {
-    background-image: url(../assets/images/img22.png);
+    background-image: url(../assets/images/img37.png);
     height: 800px;
     background-position: center;
     background-color: black;
@@ -7,11 +7,12 @@
     background-repeat: no-repeat;
   }
   
-  .hero-title {
-    padding-top: 4em;
-    font-size: 3em;
+  .compte-image .hero-title {
+    font-family: adventure;
+    font-size: 36px;
     font-weight: bolder;
-    text-shadow: white 0px 10px 30px;
+    letter-spacing: 2px;
+    padding: 230px 96px;
   }
   
   .a {
@@ -32,4 +33,10 @@
 
   .content {
     font-weight: lighter;
+  }
+
+  .container .mt-5 .btn-valider {
+    padding: 12px 32px;
+    border-radius: 12px;
+    background-image: linear-gradient(90deg, var(--bleu-color) 0%, rgba(121,9,17,1) 73%);
   }

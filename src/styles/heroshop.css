@@ -7,9 +7,11 @@
     background-repeat: no-repeat;
   }
   
-  .hero-title{
-    padding-top: 4em;
-    font-size: 3em;
+  .hero .hero-title{
+    font-family: adventure;
+    font-size: 48px;
     font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 230px 96px;
   }
   

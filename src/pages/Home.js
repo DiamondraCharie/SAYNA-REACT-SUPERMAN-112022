@@ -17,8 +17,8 @@ import Polygon from '../assets/icones/Polygon.png';
 import Polygon1 from '../assets/icones/Polygon1.png';
 import img12 from '../assets/images/img12.png';
 import img15 from '../assets/images/img15.png';
-/*import iconguillemets1 from '../assets/icones/iconguillemets1.png';
-import iconguillemets2 from '../assets/icones/iconguillemets2.png';*/
+import iconguillemets1 from '../assets/icones/iconguillemets1.png';
+import iconguillemets2 from '../assets/icones/iconguillemets2.png';
 
 
 function Home() {
@@ -154,8 +154,28 @@ function Home() {
               </form>
             </div>
         </section>
-  
-  
+        
+        <section className='citations'>
+          <div className="container">
+               <div className="guillemet-open">
+                 <img src={iconguillemets1} alt="logo"/>
+               </div>
+               <div className="citation-carte">
+                 <div> 
+                   <p className="citation-text"> - Que représente le S ? </p>
+                   <p className="citation-text">- Ce n’est pas un S. Sur ma planète cela signifie espoir.</p>
+                 </div>
+                 <div className="citation-auteur">            
+                   <p>Man Of Steel, Lois Lane et Clark Kent.</p>
+                 </div>
+               </div>
+               <div className="guillemet-close">
+                   <img src={iconguillemets2} alt="logo"/>
+               </div>
+          </div>
+        </section>
+      <div className="clearfix"></div>
+
       </>
       
 

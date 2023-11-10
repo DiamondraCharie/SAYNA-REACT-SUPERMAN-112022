@@ -65,7 +65,9 @@
 }
 
 /*Design de la partie multimédia*/
-
+.multimedia{
+  background-image: url(../assets/images/img11.png);
+}
 
 .slider-multimedia {
     display: flex;
@@ -118,8 +120,10 @@
   /*Design de la partie contact - Formulaire*/
 
   .contact {
+    background-image: url(../assets/images/img16.png);
     background-color: rgb(35, 43, 35);
     padding: 70px 0;
+    margin-top: 169px;
   }
 
   .contact .form {
@@ -138,21 +142,84 @@
     margin: 28px 0;
   }
 
-  .contact .form input[type=email], textarea {
+  .contact .form input[type=email], textarea, .frequence {
     display: block;
     border-top: none;
     border-right: none;
     border-left: none;
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(120, 120, 120);
     background-color: transparent;
   }
 
   .contact .news {
-    
+    margin: 15px 0;
+    border-bottom: 1px solid  rgb(120, 120, 120);
+  }
+
+  input[type='checkbox'] {
+    margin-left: 16px;
   }
 
   .contact .icon img {
     transform: rotate(-90deg);
     width: 15px;
+    margin-left: 163px;
+  }
+
+  .frequence {
+    margin-top: 18px;
+  }
+
+  .btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form input[type='radio'] {
+    opacity: 0;
+  }
+
+  .btn-group label {
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(69deg, var(--gray-color), var(--bleu-color)) 1;
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: var(--bleu-color);
+    font-family: adventure;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  .citations {
+    margin: 90px;
+  }
+
+  .citations  .citation-carte {
+    text-align: center;
+  }
+
+  .citations  .citation-auteur {
+    font-family: cantarell;
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+  }
+
+  .citations  .citation-text {
+    font-family: cantarell;
+  } 
+
+  .citations .guillemet-close {
+    float: right;
   }

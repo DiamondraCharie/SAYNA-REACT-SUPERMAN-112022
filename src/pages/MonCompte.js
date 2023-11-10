@@ -10,8 +10,8 @@ const MonCompte = () => {
       <div className="compte-image">
         <div className="container">
           <h1 className="hero-title text-uppercase text-white">
-             Votre identité <br />
-             Secrète...
+          SERIEZ-VOUS KRYPTONIEN ?   <br/>
+          DITES NOUS EN PLUS
           </h1>
        </div>
      </div>
